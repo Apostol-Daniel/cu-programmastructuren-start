@@ -5,12 +5,14 @@ window.addEventListener('load', Initieer);
 // Globale Variabelen
 var divToekenningResult;
 var divVergelijkResult;
+var divWiskundeResult;
 var divBoolResult;
 var divIfResult;
 var divSwitchResult;
 var divWhileResult;
 var divDoWhileResult;
 var divForResult;
+var divForInResult;
 var divBreakResult;
 var divContinueResult;
 
@@ -28,8 +30,10 @@ function Initieer(){
   // Lokale variabelen
   let btnToekenning;
   let btnVergelijk;
+  let btnWiskunde;
   let btnBool;
   let btnIf;
+  let btnSwitch;
   let btnWhile;
   let btnDoWhile;
   let btnFor;

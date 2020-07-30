@@ -88,9 +88,15 @@ function Toekenning()
   let b = 10;
   let c = a + b;
   let result ='';
-  result = `Bij waarde a =${a} en waarde b = ${b} wordt de berekening voor c = (a + b ) = ${c}`
+  result = `Bij waarde a = ${a} en waarde b = ${b} wordt de berekening voor c = (a + b ) = ${c}`
 
   divToekenningResult.innerHTML = result;
+
+  a+=3;
+  b*=a;
+  result+=`<br /> De nieuwe waarde van a is ${a} en de nieuwe waarde van b is ${b}`;
+
+  divToekenningResult.innerHTML =result;
 }
 
 

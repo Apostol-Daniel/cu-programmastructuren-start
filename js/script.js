@@ -76,6 +76,7 @@ function Initieer(){
   // Eventlisteners voorzien
   btnToekenning.addEventListener('click' ,Toekenning);
   btnVergelijk.addEventListener('click',Vergelijk);
+  btnWiskunde.addEventListener('click',Wiskunde);
 
 }
 
@@ -136,15 +137,14 @@ function Wiskunde()
   let a =5;
   let b = 10;
 
-  divWhileResult.innerHTML =
+  divWiskundeResult.innerHTML =
  `a (${a}) + b (${b}) => ${a + b} <br/>
   a (${a}) - b (${b}) => ${a - b} <br/>
   a (${a}) * b (${b}) => ${a * b} <br/>
   a (${a}) / b (${b}) => ${a / b} <br/>
   a (${a}) % b (${b}) => ${a % b} <br/>
   a (${a}) ++ ==> ${a++} <br/>
-  --b (${b}) =>${--b} <br/>
-  `;
+  --b (${b}) => ${--b} <br/>`;
 }
 
 

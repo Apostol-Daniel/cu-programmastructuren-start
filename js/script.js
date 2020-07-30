@@ -80,3 +80,17 @@ function Initieer(){
 
 
 // Functies
+
+function Toekenning()
+{
+  let a = 6;
+  let b = 10;
+  let c = a + b;
+  let result ='';
+  result = `Bij waarde a =${a} en waarde b = ${b} wordt de berekening voor c = (a + b ) = ${c}`
+
+  divToekenningResult.innerHTML = result;
+}
+
+
+

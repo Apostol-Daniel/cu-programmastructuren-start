@@ -74,6 +74,7 @@ function Initieer(){
   txtDoWhileInput = document.querySelector('#txtDoWhileInput');
   txtForInput = document.querySelector('#txtForInput');
   // Eventlisteners voorzien
+  btnToekenning.addEventListener('click' ,Toekenning);
 
 
 }

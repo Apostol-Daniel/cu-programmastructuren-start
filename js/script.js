@@ -147,6 +147,19 @@ function Wiskunde()
   --b (${b}) => ${--b} <br/>`;
 }
 
+// Booleaanse operatoren
+
+function BoolVergelijking () 
+{
+  let a =8;
+  let b =10;
+
+  divBoolResult.innerHTML =
+  `(a (${a}) < 10) && (b(${b}) > 40) => ${(a < 10)&&(b > 40)} <br/>
+   (a (${a}) < 10 || (b(${b}) > 40) => ${(a < 10)&&(b > 40)}
+  `;
+}
+
 
 
 

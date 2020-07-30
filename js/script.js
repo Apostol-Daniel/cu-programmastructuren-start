@@ -75,7 +75,7 @@ function Initieer(){
   txtForInput = document.querySelector('#txtForInput');
   // Eventlisteners voorzien
   btnToekenning.addEventListener('click' ,Toekenning);
-
+  btnVergelijk.addEventListener('click',Vergelijk);
 
 }
 
@@ -116,11 +116,14 @@ function Vergelijk()
   let a = 6;
   let b =10;
   let c = '6';
+  let d = 10;
 
   divVergelijkResult.innerHTML = 
  `a (${a}) == b (${b}) => ${a == b} <br/>
-  a (${a}) == c ('${c}') => ${a == c} <br/>
-  a (${a}) === c ('${c}') => ${a === c} <br/>
+  a (${a}) == c (${c}) => ${a == c} <br/>
+  a (${a}) === b (${b}) => ${a === b} <br/>
+  b (${b}) === d (${d}) => ${b === d} <br/>
+  a (${a}) === c (${c}) => ${a === c} <br/>
   a (${a}) !== c (${b}) => ${a !== b} <br/>
   a (${a}) < b (${b}) => ${a < b} <br/>
   a (${a}) > b (${b}) => ${a > b} <br/> `;

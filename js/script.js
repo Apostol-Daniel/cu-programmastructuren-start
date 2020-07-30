@@ -129,6 +129,23 @@ function Vergelijk()
   a (${a}) > b (${b}) => ${a > b} <br/> `;
 }
 
+//Wiskundige operatoren 
+
+function Wiskunde()
+{
+  let a =5;
+  let b = 10;
+
+  divWhileResult.innerHTML =
+ `a (${a}) + b (${b}) => ${a + b} <br/>
+  a (${a}) - b (${b}) => ${a - b} <br/>
+  a (${a}) * b (${b}) => ${a * b} <br/>
+  a (${a}) / b (${b}) => ${a / b} <br/>
+  a (${a}) % b (${b}) => ${a % b} <br/>
+  a (${a}) ++ ==> ${a++} <br/>
+  --b (${b}) =>${--b} <br/>
+  `;
+}
 
 
 

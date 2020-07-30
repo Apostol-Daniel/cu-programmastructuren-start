@@ -156,7 +156,7 @@ function BoolVergelijking ()
 
   divBoolResult.innerHTML =
   `(a (${a}) < 10) && (b(${b}) > 40) => ${(a < 10)&&(b > 40)} <br/>
-   (a (${a}) < 10 || (b(${b}) > 40) => ${(a < 10)&&(b > 40)}
+   (a (${a}) < 10 || (b(${b}) > 40) => ${(a < 10)||(b > 40)}
   `;
 }
 

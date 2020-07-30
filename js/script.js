@@ -97,7 +97,17 @@ function Toekenning()
   result+=`<br /> De nieuwe waarde van a is ${a} en de nieuwe waarde van b is ${b}`;
 
   divToekenningResult.innerHTML =result;
+
+  var fruit = "appel";
+  divToekenningResult.innerHTML += `<br />${typeof(fruit)}`;
+
+  var boolke = true;
+  divToekenningResult.innerHTML += `<br />${typeof(boolke)}`;
+
+  var nummer = 7.6;
+  divToekenningResult.innerHTML += `<br />${typeof(nummer)}`;
 }
+
 
 
 

@@ -81,6 +81,7 @@ function Initieer(){
 
 
 // Functies
+// Toekennigns operatoren
 
 function Toekenning()
 {
@@ -107,6 +108,24 @@ function Toekenning()
   var nummer = 7.6;
   divToekenningResult.innerHTML += `<br />${typeof(nummer)}`;
 }
+
+//Vergelijkings operatoren
+
+function Vergelijk()
+{
+  let a = 6;
+  let b =10;
+  let c = '6';
+
+  divVergelijkResult.innerHTML = 
+ `a (${a}) == b (${b}) => ${a == b} <br/>
+  a (${a}) == c ('${c}') => ${a == c} <br/>
+  a (${a}) === c ('${c}') => ${a === c} <br/>
+  a (${a}) !== c (${b}) => ${a !== b} <br/>
+  a (${a}) < b (${b}) => ${a < b} <br/>
+  a (${a}) > b (${b}) => ${a > b} <br/> `;
+}
+
 
 
 

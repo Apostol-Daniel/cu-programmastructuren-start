@@ -78,6 +78,7 @@ function Initieer(){
   btnVergelijk.addEventListener('click',Vergelijk);
   btnWiskunde.addEventListener('click',Wiskunde);
   btnBool.addEventListener('click',BoolVergelijking);
+  btnIf.addEventListener('click',IfUitvoer);
 }
 
 

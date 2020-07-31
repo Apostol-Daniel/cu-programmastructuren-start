@@ -161,5 +161,43 @@ function BoolVergelijking ()
 }
 
 
+// IF Structuur
+
+function IfUitvoer()
+{
+  let naamCursur = "Web Fronted Advanced";
+  let aantaalStudenten = 21;
+  let lectorGevonden = false;
+  let prijs = 12.5;
+  let resultString = '';
+  let maxStudentPerGroup = 40;
+
+  // if gevolgd door meerdere statements
+  if(prijs < 15) resultString =`De cursus met prijs & euro; ${prijs} is niet zo duur.`;
+
+  // if met een els-tak
+  if((aantaalStudenten <=25)&&(prijs<15))
+  {
+    resultString +=`<br/> Een te kleine klas met ${aantaalStudenten} studenten, we moeten wat meer reclame maken !`;
+  }
+
+  // if met een els-tak
+
+  if((lectorGevonden) &&(aantaalStudenten > 0))
+  {
+    resultString=`<br/> Nog geen studenten ingeschreven, geen paniek !`;
+  }
+  else
+  {
+    resultString+=`Let op : Er is nog geen lector voor het vak`;
+  }
+
+  //Verkorte notatie van een if-statement
+  (aantaalStudenten < maxStudentPerGroup) ? divIfResult.innerHTML = 
+  resultString+=`<br/> Er zijn nog ${maxStudentPerGroup - aantaalStudenten} plaatsen over` : 
+  resultString +=`<br/> Er zijn geen plaatsen over`;
+
+}
+
 
 

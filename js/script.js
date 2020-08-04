@@ -313,7 +313,7 @@ function BreakDemo()
 {
   let resultString = '';
 
-  for(let i = 1;i<11;i = i=2)
+  for(let i = 1;i<11;i =i+2)
   {
     if(i == 7 ) break;
     resultString +=`De waarde is nu ${i} <br/>`

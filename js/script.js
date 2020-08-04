@@ -79,6 +79,7 @@ function Initieer(){
   btnWiskunde.addEventListener('click',Wiskunde);
   btnBool.addEventListener('click',BoolVergelijking);
   btnIf.addEventListener('click',IfUitvoer);
+  btnSwitch.addEventListener('click',SwitchUitvoer);
 }
 
 
@@ -227,7 +228,7 @@ function SwitchUitvoer()
       ingaveCorrect = false;
       break;
   }
-ingaveCorrect ? resultString = 'is een scheepvaarder' : resultString = 'is geen shceepvarder';
+ingaveCorrect ? resultString = ' is een scheepvaarder' : resultString = 'is geen scheepvarder';
 
 resultString =`${naam}` + resultString;
 divSwitchResult.innerHTML = resultString;

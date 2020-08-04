@@ -82,6 +82,7 @@ function Initieer(){
   btnSwitch.addEventListener('click',SwitchUitvoer);
   btnWhile.addEventListener('click',WhileUitvoer);
   btnDoWhile.addEventListener('click',DoWhileUitvoer);
+  btnFor.addEventListener('click',ForUitvoer);
 }
 
 
@@ -280,7 +281,7 @@ function ForUitvoer()
 {
   let huidigWaarde = parseInt(txtForInput.value);
   let minWaarde = 3;
-  let reusltString ='';
+  let resultString ='';
 
   for(let i =huidigWaarde;i > minWaarde; i--)
   {
@@ -288,5 +289,5 @@ function ForUitvoer()
   }
   divForResult.innerHTML = resultString;
   txtDoWhileInput.value = "";
-}C
+}
 

@@ -184,19 +184,54 @@ function IfUitvoer()
 
   // if met een els-tak
 
-  if((lectorGevonden) &&(aantaalStudenten > 0))
+  if((lectorGevonden) &&(aantaalStudenten < 0))
   {
     resultString=`<br/> Nog geen studenten ingeschreven, geen paniek !`;
   }
   else
   {
-    resultString+=`Let op : Er is nog geen lector voor het vak`;
+    resultString+=`<br/>Let op : Er is nog geen lector voor het vak`;
   }
 
   //Verkorte notatie van een if-statement
+  
   (aantaalStudenten < maxStudentPerGroup) ? divIfResult.innerHTML = 
   resultString+=`<br/> Er zijn nog ${maxStudentPerGroup - aantaalStudenten} plaatsen over` : 
   resultString +=`<br/> Er zijn geen plaatsen over`;
+
+}
+
+// Switch
+
+function SwitchUitvoer()
+{
+  let naam = txtSwitchInput.value;
+  let ingaveCorrect = false;
+  let resultString = '';
+
+  switch(naam)
+  {
+    case 'Jan':
+      ingaveCorrect = true;
+      break;
+    case 'Piet':
+      ingaveCorrect = true;
+      break;
+    case 'Tjores':
+      ingaveCorrect = true;
+      break;
+    case 'Corneel':
+      ingaveCorrect = true;
+      break;
+    default:
+      ingaveCorrect = false;
+      break;
+  }
+ingaveCorrect ? resultString = 'is een scheepvaarder' : resultString = 'is geen shceepvarder';
+
+resultString =`${naam}` + resultString;
+divSwitchResult.innerHTML = resultString;
+txtSwitchInput.value = "";
 
 }
 

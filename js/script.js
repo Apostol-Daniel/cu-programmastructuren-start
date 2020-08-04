@@ -81,6 +81,7 @@ function Initieer(){
   btnIf.addEventListener('click',IfUitvoer);
   btnSwitch.addEventListener('click',SwitchUitvoer);
   btnWhile.addEventListener('click',WhileUitvoer);
+  btnDoWhile.addEventListener('click',DoWhileUitvoer);
 }
 
 
@@ -256,4 +257,20 @@ function WhileUitvoer()
 
 }
 
+// Do While
+
+function DoWhileUitvoer() 
+{
+  let huidigWaarde = parseInt(txtDoWhileInput.value);
+  let maximumWaarde = 10;
+  let resultString = '';
+
+  do{
+    resultString +=`De waarde is nu ${huidigWaarde}<br/>`;
+    huidigWaarde++;
+  }
+  while(huidigWaarde <= maximumWaarde)
+  divDoWhileResult.innerHTML = resultString;
+  txtDoWhileInput.value = "";
+}
 

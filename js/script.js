@@ -283,11 +283,27 @@ function ForUitvoer()
   let minWaarde = 3;
   let resultString ='';
 
-  for(let i =huidigWaarde;i > minWaarde; i--)
+  for(let i =huidigWaarde;i >= minWaarde; i--)
   {
     resultString +=`De luswaarde is nu ${i}<br/>`;
   }
   divForResult.innerHTML = resultString;
   txtDoWhileInput.value = "";
 }
+
+// For in
+
+function ForInUitvoer()
+{
+  let persoon = {"VoorNaam" : "Piet", "FamilieNaam" : "Pienter", "Leeftijd" : 35, "IsFictief" : true};
+  let resultString = '';
+  
+  for(let ident in persoon)
+  {
+    resultString +=`${ident.toString()} => ${persoon[ident]} <br/>`;
+  }
+  divForInResult.innerHTML = resultString;
+}
+
+
 

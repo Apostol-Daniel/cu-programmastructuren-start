@@ -85,6 +85,7 @@ function Initieer(){
   btnFor.addEventListener('click',ForUitvoer);
   btnForIn.addEventListener('click',ForInUitvoer);
   btnBreak.addEventListener('click',BreakDemo);
+  btnContinue.addEventListener('click',ContinueDemo);
 }
 
 

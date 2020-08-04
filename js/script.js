@@ -274,3 +274,19 @@ function DoWhileUitvoer()
   txtDoWhileInput.value = "";
 }
 
+// For
+
+function ForUitvoer()
+{
+  let huidigWaarde = parseInt(txtForInput.value);
+  let minWaarde = 3;
+  let reusltString ='';
+
+  for(let i =huidigWaarde;i > minWaarde; i--)
+  {
+    resultString +=`De luswaarde is nu ${i}<br/>`;
+  }
+  divForResult.innerHTML = resultString;
+  txtDoWhileInput.value = "";
+}C
+

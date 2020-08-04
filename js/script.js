@@ -322,4 +322,18 @@ function BreakDemo()
 }
 
 
+// Continue 
 
+function ContinueDemo()
+{
+  let huidigWaarde = 0;
+  let resultString ='';
+
+  while(huidigWaarde < 8)
+  {
+    huidigWaarde++;
+    if((huidigWaarde ==3) || (huidigWaarde ==6)) continue;
+    resultString +=`De huidige waarde is nu ${huidigWaarde} <br/>`;
+  }
+  divContinueResult.innerHTML = resultString;
+}

@@ -237,4 +237,22 @@ txtSwitchInput.value = "";
 }
 
 
+// While
+
+function WhileUitvoer() 
+{
+  let huidigWaarde = 1;
+  let maximumWaarde = parseInt(txtWhileInput.value);
+  let resultString = '';
+  
+  while (huidigWaarde <= maximumWaarde)
+  {
+    resultString +=`De huidigwaarde is nu ${huidigWaarde} <br/>`;
+    huidigWaarde++;
+  }
+  divWhileResult.innerHTML = resultString;
+  txtWhileInput.value = "";
+
+}
+
 

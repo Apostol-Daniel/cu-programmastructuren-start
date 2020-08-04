@@ -80,6 +80,7 @@ function Initieer(){
   btnBool.addEventListener('click',BoolVergelijking);
   btnIf.addEventListener('click',IfUitvoer);
   btnSwitch.addEventListener('click',SwitchUitvoer);
+  btnWhile.addEventListener('click',WhileUitvoer);
 }
 
 

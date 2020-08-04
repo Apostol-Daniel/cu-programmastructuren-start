@@ -83,6 +83,7 @@ function Initieer(){
   btnWhile.addEventListener('click',WhileUitvoer);
   btnDoWhile.addEventListener('click',DoWhileUitvoer);
   btnFor.addEventListener('click',ForUitvoer);
+  btnForIn.addEventListener('click',ForInUitvoer);
 }
 
 
